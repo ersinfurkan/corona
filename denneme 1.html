@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+	<script>
+	window.onload = function () {
+	
+	var options = {
+		animationEnabled: true,
+		theme: "light2",
+		title:{
+			text: "Türkiye Ve İngiltere COVİD-19"
+		},
+		axisX:{
+			valueFormatString: "DD MMM"
+		},
+		axisY: {
+			title: "Artış Miktarı",
+			
+			minimum: 0
+		},
+		toolTip:{
+			shared:true
+		},  
+		legend:{
+			cursor:"pointer",
+			verticalAlign: "bottom",
+			horizontalAlign: "left",
+			dockInsidePlotArea: true,
+			itemclick: toogleDataSeries
+		},
+		data: [{
+			type: "line",
+			showInLegend: true,
+			name: "Türkiye",
+			markerType: "square",
+			xValueFormatString: "DD MMM, YYYY",
+			color: "red",
+			yValueFormatString: "#,##0K",
+			dataPoints: [
+			{ x: new Date(2020, 10, 1), y: 377473 },
+			{ x: new Date(2020, 10, 2), y: 379775 },
+			{ x: new Date(2020, 10, 3), y: 382118 },
+			{ x: new Date(2020, 10, 4), y: 384509 },
+			{ x: new Date(2020, 10, 5), y: 386820 },
+			{ x: new Date(2020, 10, 6), y: 389256 },
+			{ x: new Date(2020, 10, 7), y: 391739 },
+			{ x: new Date(2020, 10, 8), y: 394255 },
+			{ x: new Date(2020, 10, 9), y: 396831 },
+			{ x: new Date(2020, 10, 10), y: 399360 },
+			{ x: new Date(2020, 10, 11), y: 402053 },
+			{ x: new Date(2020, 10, 12), y: 404894 },
+			{ x: new Date(2020, 10, 13), y: 407939 },
+			{ x: new Date(2020, 10, 14), y: 411055 },
+			{ x: new Date(2020, 10, 15), y: 414278 },
+            { x: new Date(2020, 10, 16), y: 417594 },
+			{ x: new Date(2020, 10, 17), y: 421413 },
+			{ x: new Date(2020, 10, 18), y: 425628 },
+			{ x: new Date(2020, 10, 19), y: 430170 },
+			{ x: new Date(2020, 10, 20), y: 435273 },
+			{ x: new Date(2020, 10, 21), y: 440805 },
+			{ x: new Date(2020, 10, 22), y: 446822 },
+			{ x: new Date(2020, 10, 23), y: 453535 },
+			{ x: new Date(2020, 10, 24), y: 460916 },
+			{ x: new Date(2020, 10, 25), y: 467730 },
+			{ x: new Date(2020, 10, 26), y: 503738 },
+			{ x: new Date(2020, 10, 27), y: 548244 },
+			{ x: new Date(2020, 10, 28), y: 578347 },
+			{ x: new Date(2020, 10, 29), y: 607628 },
+			{ x: new Date(2020, 10, 30), y: 638847 },
+            { x: new Date(2020, 11, 1), y: 668957 },
+			{ x: new Date(2020, 11, 2), y: 700880 },
+			{ x: new Date(2020, 11, 3), y: 733261 },
+			{ x: new Date(2020, 11, 4), y: 765997 },
+			{ x: new Date(2020, 11, 5), y: 797893 },
+			{ x: new Date(2020, 11, 6), y: 828295 },
+			{ x: new Date(2020, 11, 7), y: 860432 },
+			{ x: new Date(2020, 11, 8), y: 893630 },
+			{ x: new Date(2020, 11, 9), y: 925342 },
+			{ x: new Date(2020, 11, 10), y: 1748567 },
+			{ x: new Date(2020, 11, 11), y: 1780673 },
+			{ x: new Date(2020, 11, 12), y: 1809809 },
+			{ x: new Date(2020, 11, 13), y: 1836728 },
+			{ x: new Date(2020, 11, 14), y: 1866345 },
+			{ x: new Date(2020, 11, 15), y: 1898447 },
+            { x: new Date(2020, 11, 16), y: 1928165 },
+			{ x: new Date(2020, 11, 17), y: 1955680 },
+			{ x: new Date(2020, 11, 18), y: 1982090 },
+			{ x: new Date(2020, 11, 19), y: 2004285 },
+			{ x: new Date(2020, 11, 20), y: 2024601 },
+			{ x: new Date(2020, 11, 21), y: 2043704 },
+			{ x: new Date(2020, 11, 22), y: 2062960 },
+			{ x: new Date(2020, 11, 23), y: 2082610 },
+			{ x: new Date(2020, 11, 24), y: 2100712 },
+			{ x: new Date(2020, 11, 25), y: 2118255 },
+			{ x: new Date(2020, 11, 26), y: 2133373 },
+			{ x: new Date(2020, 11, 27), y: 2147578 },
+			{ x: new Date(2020, 11, 28), y: 2162775 },
+			{ x: new Date(2020, 11, 29), y: 2178580 },
+			{ x: new Date(2020, 11, 30), y: 2194272 },
+			{ x: new Date(2020, 11, 31), y: 2208652 },
+			{ x: new Date(2020, 12, 1), y: 2220855 },
+            { x: new Date(2020, 12, 2), y: 2232035 },
+			{ x: new Date(2020, 12, 3), y: 2241912 },
+			{ x: new Date(2020, 12, 4), y: 2255607 },
+			{ x: new Date(2020, 12, 5), y: 2270101 },
+			{ x: new Date(2020, 12, 6), y: 2283931 },
+			{ x: new Date(2020, 12, 7), y: 2296102 },
+			{ x: new Date(2020, 12, 8), y: 2307581 },
+			{ x: new Date(2020, 12, 9), y: 2317118 },
+			{ x: new Date(2020, 12, 10), y: 2326256 },
+			{ x: new Date(2020, 12, 11), y: 2336476 },
+			{ x: new Date(2020, 12, 12), y: 2346285 },
+			{ x: new Date(2020, 12, 13), y: 2355839 },
+			{ x: new Date(2020, 12, 14), y: 2364801 },
+			{ x: new Date(2020, 12, 15), y: 2373115 },
+			{ x: new Date(2020, 12, 16), y: 2380665 },
+
+
+
+
+
+
+
+
+			]
+		},
+		{
+			type: "line",
+			showInLegend: true,
+			name: "İngiltere",
+			lineDashType: "dash",
+			yValueFormatString: "#,##0K",
+			dataPoints: [
+			{ x: new Date(2020, 10, 1), y: 462775 },
+			{ x: new Date(2020, 10, 2), y: 469769 },
+			{ x: new Date(2020, 10, 3), y: 482654 },
+			{ x: new Date(2020, 10, 4), y: 505619 },
+			{ x: new Date(2020, 10, 5), y: 518222 },
+			{ x: new Date(2020, 10, 6), y: 532779 },
+			{ x: new Date(2020, 10, 7), y: 546952 },
+			{ x: new Date(2020, 10, 8), y: 564502 },
+			{ x: new Date(2020, 10, 9), y: 578390 },
+			{ x: new Date(2020, 10, 10), y: 593565 },
+			{ x: new Date(2020, 10, 11), y: 606447 },
+			{ x: new Date(2020, 10, 12), y: 620458 },
+			{ x: new Date(2020, 10, 13), y: 637708 },
+			{ x: new Date(2020, 10, 14), y: 657459 },
+			{ x: new Date(2020, 10, 15), y: 676455 },
+            { x: new Date(2020, 10, 16), y: 692112 },
+			{ x: new Date(2020, 10, 17), y: 708298 },
+			{ x: new Date(2020, 10, 18), y: 725292 },
+			{ x: new Date(2020, 10, 19), y: 744122 },
+			{ x: new Date(2020, 10, 20), y: 765487 },
+			{ x: new Date(2020, 10, 21), y: 792194 },
+			{ x: new Date(2020, 10, 22), y: 813451 },
+			{ x: new Date(2020, 10, 23), y: 834010 },
+			{ x: new Date(2020, 10, 24), y: 857043 },
+			{ x: new Date(2020, 10, 25), y: 876840 },
+			{ x: new Date(2020, 10, 26), y: 897740 },
+			{ x: new Date(2020, 10, 27), y: 920664 },
+			{ x: new Date(2020, 10, 28), y: 945378 },
+			{ x: new Date(2020, 10, 29), y: 968456 },
+			{ x: new Date(2020, 10, 30), y: 992874 },
+            { x: new Date(2020, 10, 31), y: 1014793 },
+            { x: new Date(2020, 11, 1), y: 1038054 },
+			{ x: new Date(2020, 11, 2), y: 1057021 },
+			{ x: new Date(2020, 11, 3), y: 1077099 },
+			{ x: new Date(2020, 11, 4), y: 1102305 },
+			{ x: new Date(2020, 11, 5), y: 1126469 },
+			{ x: new Date(2020, 11, 6), y: 1149791 },
+			{ x: new Date(2020, 11, 7), y: 1174770 },
+			{ x: new Date(2020, 11, 8), y: 1195350 },
+			{ x: new Date(2020, 11, 9), y: 1216747 },
+			{ x: new Date(2020, 11, 10), y: 1237198 },
+			{ x: new Date(2020, 11, 11), y: 1260198 },
+			{ x: new Date(2020, 11, 12), y: 1293715 },
+			{ x: new Date(2020, 11, 13), y: 1321031 },
+			{ x: new Date(2020, 11, 14), y: 1347907 },
+			{ x: new Date(2020, 11, 15), y: 1372884 },
+            { x: new Date(2020, 11, 16), y: 1394299 },
+			{ x: new Date(2020, 11, 17), y: 1414359 },
+			{ x: new Date(2020, 11, 18), y: 1434004 },
+			{ x: new Date(2020, 11, 19), y: 1456940 },
+			{ x: new Date(2020, 11, 20), y: 1477214 },
+			{ x: new Date(2020, 11, 21), y: 1497135 },
+			{ x: new Date(2020, 11, 22), y: 1515802 },
+			{ x: new Date(2020, 11, 23), y: 1531267 },
+			{ x: new Date(2020, 11, 24), y: 1542611 },
+			{ x: new Date(2020, 11, 25), y: 1560872 },
+			{ x: new Date(2020, 11, 26), y: 1578429 },
+			{ x: new Date(2020, 11, 27), y: 1593250 },
+			{ x: new Date(2020, 11, 28), y: 1609141 },
+			{ x: new Date(2020, 11, 29), y: 1621305 },
+			{ x: new Date(2020, 11, 30), y: 1633733 },
+            { x: new Date(2020, 12, 1), y: 1647230 },
+			{ x: new Date(2020, 12, 2), y: 1663467 },
+			{ x: new Date(2020, 12, 3), y: 1678418 },
+			{ x: new Date(2020, 12, 4), y: 1694800 },
+			{ x: new Date(2020, 12, 5), y: 1710379 },
+			{ x: new Date(2020, 12, 6), y: 1727751 },
+			{ x: new Date(2020, 12, 7), y: 1742525 },
+			{ x: new Date(2020, 12, 8), y: 1754911 },
+			{ x: new Date(2020, 12, 9), y: 1771545 },
+			{ x: new Date(2020, 12, 10), y: 1792611 },
+			{ x: new Date(2020, 12, 11), y: 1814395 },
+			{ x: new Date(2020, 12, 12), y: 1835949 },
+			{ x: new Date(2020, 12, 13), y: 1854490 },
+			{ x: new Date(2020, 12, 14), y: 1874867 },
+			{ x: new Date(2020, 12, 15), y: 1893436 },
+		
+			]
+		}]
+	};
+	$("#chartContainer").CanvasJSChart(options);
+	
+	function toogleDataSeries(e){
+		if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+			e.dataSeries.visible = false;
+		} else{
+			e.dataSeries.visible = true;
+		}
+		e.chart.render();
+	}
+	
+	}
+	</script>
+	</head>
+<body>
+<div class="w3-container">
+
+<div class="w3-bar w3-blue">
+  <a href="https://saglik.gov.tr/" class="w3-bar-item w3-button">Anasayfa</a>
+  <a href="https://covid19.saglik.gov.tr/TR-66935/genel-koronavirus-tablosu.html?gclid=EAIaIQobChMItZWIodyl7gIVWuPmCh2sjwOHEAAYASAAEgLa0fD_BwE" class="w3-bar-item w3-button">Güncel COVİD-19 Grafiği </a>
+  <a href="https://covid19.saglik.gov.tr/TR-66935/genel-koronavirus-tablosu.html?gclid=EAIaIQobChMItZWIodyl7gIVWuPmCh2sjwOHEAAYASAAEgLa0fD_BwE" class="w3-bar-item w3-button">Son Dakika Haberleri</a>
+</div>
+
+
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+<!-- BAŞLA: TRT Haber Koronavirüs Güncel Bilgileri Sitene Ekle -->
+<iframe frameborder="0" width="100%" height="1105" src="https://interaktif.trthaber.com/koronavirus/?counter=1&table=1"></iframe>
+<!-- BİTİŞ: TRT Haber Koronavirüs Güncel Bilgileri Sitene Ekle -->
+
+
+
+
+
+</div>
+</body>
+</html> 
